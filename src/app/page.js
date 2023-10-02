@@ -5,12 +5,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const Page = () => {
-  const phone = '+254798040353';
   const email = 'info@freshrootsagriculture.co.ke';
-
-  const handleNumberClick = () => {
-    window.location.href = `whatsapp://send?phone=${phone}`
-  }
 
   const handleMailClick = () => {
     window.location.href = `mailto:${email}`;
@@ -134,15 +129,14 @@ const Page = () => {
             {/* phone */}
             <div className='flex flex-col justify-center align-middle items-center py-5'>
               <h1 className='font-armata text-lm font-bold text-bronze-yellow'>
-                WhatsApp Us
+                Call Us
               </h1>
 
-              <a 
-                className='font-overlook text-m font-bold text-barn-red cursor-pointer'
-                onClick={handleNumberClick}
+              <div 
+                className='font-overlook text-m font-bold text-barn-red'
               >
-                {phone}
-              </a>
+                +254 20 521 0324
+              </div>
             </div>
 
             {/* Email */}
